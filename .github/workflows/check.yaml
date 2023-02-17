@@ -2,6 +2,7 @@ name: check
 
 on:
   pull_request:
+  merge_group:
 
 jobs:
   check:
@@ -10,4 +11,4 @@ jobs:
       run:
         shell: bash
     steps:
-      - run: exit 0
+      - run: echo ${{ github.event.pull_request.number }}
