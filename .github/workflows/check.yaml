@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  fail:
+  check:
     runs-on: ubuntu-latest
     defaults:
       run:
