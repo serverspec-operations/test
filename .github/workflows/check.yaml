@@ -2,6 +2,9 @@ name: check
 
 on:
   pull_request:
+    types:
+      - opened
+      - closed
   merge_group:
 
 jobs:
