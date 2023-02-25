@@ -1,6 +1,9 @@
 #!/bin/bash
 
-TARGET=$1
+curl -s \
+  -H "Authorization: token ${GITHUB_TOKEN}" \
+  -H "Accept: application/vnd.github.v3+json" \
+  "https://api.github.com/repos/serverspec-operations/test/pulls?per_page=100"
 
 get_prs() {
   curl -s \

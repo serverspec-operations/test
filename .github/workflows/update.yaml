@@ -1,4 +1,4 @@
-name: check
+name: update
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - closed
 
 jobs:
-  check:
+  update:
     runs-on: ubuntu-latest
     defaults:
       run:
