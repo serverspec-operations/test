@@ -2,8 +2,6 @@ name: check
 
 on:
   pull_request:
-    paths:
-      - foo/bar
 
 jobs:
   check:
