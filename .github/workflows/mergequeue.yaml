@@ -2,6 +2,8 @@ name: merge queue
 
 on:
   merge_group:
+  push:
+    branches: [foo]
 
 jobs:
   check:
